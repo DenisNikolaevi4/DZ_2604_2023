@@ -8,9 +8,9 @@
 
 a = int(input("Введите число А: ")) 
 b = int(input("Введите степень B: ")) 
-def step(a, b):
+def stepen(a, b):
     if b == 1:
         return a
-    return a * step(a, b-1)
+    return a * stepen(a, b-1)
 
-print(f"Число A({a}) в степени В({b}) = {step(a,b)}")
+print(f"Число A({a}) в степени В({b}) = {stepen(a,b)}")
